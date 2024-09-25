@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting style and Global attributes</title>
+</head>
+<body>
+    <h1>formatting 1</h1>
+    <!-- <h1>formatting 2</h1>  comments in html-->
+    <h1>formatting 3</h1>
+
+    <h1>this is <b>important</b></h1> 
+    <!-- no effect of bold since headings are already in bold -->
+
+    <p>this is <b>important</b></p> <!--<b> tag: Isse jo text likha jata hai wo visually bold 
+        hota hai, lekin is tag ka koi special importance ya meaning nahi hota. Ye sirf 
+        presentation ke liye use hota hai.-->
+    
+    <p>this is also <strong>important</strong></p> <!--<strong> tag: Is tag se bhi text bold hota hai,
+         lekin iske saath ek semantic importance bhi hoti hai. strong tag ka matlab hota hai 
+         ki jo text likha gaya hai wo important ya strong emphasis wala hai, jo screen readers 
+         ko bhi indicate karta hai ki ye content zyada important hai.-->
+
+<!-- Toh, visually dono ka output similar hota hai, par <strong> ka semantic meaning bhi hota hai jo accessibility aur SEO ke liye helpful hota hai. -->
+
+    <p>this is <i>important</i></p>  <!--similar for italicizing-->
+    <p>this is <em>important</em></p>
+
+    <!-- ul>li*4 tab    shortcut--> 
+
+    <ul>
+        <li>apple</li>
+        <li>bnana</li>
+        <li>cherry</li>
+        <li>mango</li>
+    </ul>
+        <p>H<sub>2</sub>O</p>  <!--sub & sup tags-->
+
+        <p>this is original<small>this is small  <small>  this is more small</small>  </small></p><!--HTML <small> tag makes text font by one size smaller
+             than the document?s base font size (Such as large to medium, medium to small, etc.)-->
+
+        <!-- del & mark tag -->
+
+        <p>Yeh <del>purana content</del> ab valid nahi hai.</p> <!-- Jab aapko batana ho ki koi content ab hat chuka hai ya use modify kiya gaya hai-->
+
+        <p>Yeh ek <mark>important point</mark> hai jo aapko yaad rakhna chahiye.</p> <!--to highlight text-->
+
+        <!-- style attrbute inline css -->
+
+        <h2
+        style = "
+        text-align: center; 
+        background-color : green
+        "
+        >this text need some styling</h2>
+
+
+
+
+
+
+
+
+</body>
+</html>

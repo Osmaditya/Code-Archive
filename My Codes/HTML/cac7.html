@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in html</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse; 
+            text-align: center;
+            
+            
+        }
+        th,td{
+            border: 2px solid rgb(14, 3, 4);
+            padding: 10px;
+            
+        }
+        tr:nth-child(even){
+            background-color:rgb(113, 113, 117);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in html</h1>
+    <hr>
+    <table > <!-- use emmet table>tr>th*3 tab -->
+        <!-- TO GROUP COLUMN <COLGRoup> IS USED  -->
+        <!-- <colgroup>
+            <col span="2" style="background-color: aqua;"/>
+        </colgroup> -->
+        <tr >
+            <th>NAME</th>
+            <th>CLASS</th>
+            <th>MOB</th>
+        </tr>
+        <tr> <!--use emmet tr>td*3 tab -->
+            <td>Aditya</td>
+            <td>10</td>
+            <td>9966332255</td>
+        </tr>
+        <tr> 
+            <td>Ayush</td>
+            <td>12</td>
+            <td>9955441122</td>
+        </tr>
+        <tr> 
+            <td>Shlok</td>
+            <td>8</td>
+            <td>8855662211</td>
+        </tr>
+        <tr> 
+            <td>Abhishek</td>
+            <td>9</td>
+            <td>8885416211</td>
+        </tr>
+
+    </table>
+</body>
+</html>

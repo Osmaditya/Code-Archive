@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value of colors and CSS format</title>
+
+    <!-- external css  -->
+    <link rel="stylesheet" href="style.css"> <!--href contains css file -->
+
+    <!-- internal css  baad me hai isliy y reflect hoga-->  
+    <style>
+        body{
+            background-color: maroon;
+        }
+    </style>
+    <!-- KONSA CSS USE HOGA Y DEPEND KRTA HAI HM KAB CSS INJECT KR RHE 
+    AGAR HM LAST ME INTERNAL CSS LIKH RHE TO VO REFLECT HOGA
+    LEKIN AGAR LAST ME EXTERNAL CSS LIKH RHE TO VO REFLECT HOGA -->
+</head>
+<body>
+    <h1>Understanding Colors in html</h1>
+<!-- INLINE CSS HAS HIGHEST PRIORITY -->
+    <h2
+        style = "
+        text-align: center; 
+        background-color : green;
+        color:blue   
+        "
+        >this text need some styling</h2>  <!--(color name)-->
+
+        <h2
+        style = "
+        text-align: center; 
+        background-color : lavender
+        "
+        >this text need some styling</h2><!--(hex value of color)-->
+
+        <h2
+        style = "
+        text-align: center; 
+        background-color : hsl(66, 87%, 51%)
+        "
+        >this text need some styling</h2><!--(h-hew (0-360), s-saturation in % , light in %)-->
+
+        <h2
+        style = "
+        text-align: center; 
+        background-color : rgba(238, 19, 3,.5)
+        "
+        >this text need some styling</h2><!--(a- opacity)-->
+
+        <!-- TO ADD QUOTES -->
+        <p>
+            <blockquote cite="Elon musk">   <!--this code is given by elon musk-->
+                where there is a will there is a way
+            </blockquote>
+            <q>this is another quote</q>
+        </p>
+        <abbr style = "color:white;" title="Hyper Text markup Language">HTML</abbr> <!--used to write short forms-->
+
+        <!-- HTML <address> tag is used to specify the authorship information of the article or webpage.
+         It can contain any type of information which is needed such as, URL, physical address, phone number, email, other links, etc. -->
+        <address>Contact Author at:<br>  
+            <a href="mailto:example@gmail.com">Example@gmail.com</a></address>  
+
+
+            <!-- cite provides reference or title to a creative work, quoted content, books, websites, a research paper, a blog-spot, painting, etc. -->
+            <p>A famous book:  
+                <cite> Learning Web Design</cite> written by Jennifer Niederst Robbins  
+              </p>  
+
+            <bdo dir="rtl">Aditya</bdo> <!--to write text in opp. direction-->
+</body>
+</html>

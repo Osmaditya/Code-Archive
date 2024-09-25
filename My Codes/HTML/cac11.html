@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+</head>
+<body>
+    
+
+    <code>  <!--code tag to write code-->
+        console.log("hello")
+    </code>
+
+
+    <!-- HTML <kbd> tag indicates the part of inline text which represents the user keyboard input,
+         voice input, or any other text entry device input. -->
+    <p>If you are using MS document then you can use shortcut <kbd>ctrl + s</kbd> to save your current document. </p> 
+
+
+    <!-- HTML <var> tag is a phrase tag which is used to define the variable
+         for a mathematical equation, or in the programming context. -->
+    <p>Following is equation for distributive law</p>  
+    <p><var>a</var>(<var>b</var>+<var>c</var>)=<var>ab</var>+<var>ac</var></p>  
+
+    <h1>Before HTML SEMANTICS</h1>
+    <!-- HTML semantics aane se pehle hm div ki help se different sections of webpage create krte the -->
+     <!-- taki unko alag alag style kiya jaa kse  -->
+    <div class = "Header"></div>
+    <div class = "Navbar"></div>
+    <div class = "Content"></div>
+    <div class = "Footer"></div>
+    <hr>
+
+    <h1>After HTML SEMANTICS</h1>
+    <h3>Semantic HTML refers to the HTML tags describing the meaning of the content inside the tags.</h3>
+    <p>HTML semantics ka matlab hai HTML tags ka istemal unke intended purpose ke liye karna, taaki web page ka structure aur meaning clear ho, sirf dikhne ke liye nahi, balki accessibility aur SEO ke liye bhi. <br>
+
+        Semantics ka maqsad yeh hota hai ki browser, developer, aur search engines ko HTML content ka correct context samajhne mein madad mile. Semantically correct tags se content ka meaning clear hota hai aur assistive technologies (jaise screen readers) bhi use karne wale ko behtar experience de paati hain.</p>
+    <br>
+    <!-- Semantic Markup means jiske tags dekhne se hi hame unke andr kya cintent hai wo pata chal jaye-->
+    <hr>
+    <!-- HTML ne inbulid tags de diy different sections of webpage k liy -->
+     <header>The header element define a page or section header. A logo, a search bar, links for navigation, etc., are often included.</header><br>
+     <!--introductory content ko contain krta haiye like subheadings or like navigation link-->
+<br>
+     <nav>HTML nav tag is used to represent a section which contains navigation links, either within current document or to another document.
+         Examples of some navigation links are menu, table of contents, indexes, etc.</nav>
+<br>
+
+     <section>A section tag is used to define the section within the content of a web page. 
+        It is called a semantic HTML5 element. With the help of section tags, we can organize the content structure logically and meaningfully.
+         The main objective of section tags is to generate independent content blocks that have one another.</section>
+
+<br>
+     <footer>HTML footer tag is used to define a footer for a document or a section. It is generally used in the last of the section (bottom of the page). author info,copyright,like info ko store krta hai</footer><br>
+
+
+     <article>The HTML Article tag defines an independent self-contained content in a document, page, application or a site.</article><br>
+
+
+     <aside>The HTML aside tag provides information about the main content. It represents content that forms the main textual flow of a document.
+
+        It is used to bring out extra information to users to know important points about the article or the web page, but it is unnecessary for the page. </aside>
+
+     <!-- The HTML <summary> tag is used with <details> tag. It is used as a summary, caption or legend for the content of a <details> element. -->
+        <br>
+        <details>  <!--HTML <details> tag is used to specify the additional details on the web page that the user can view or hide on demand.-->
+            <summary>JavaTpoint Summary</summary>  
+            <p> JavaTpoint is a popular tutorial website.</p>  
+            <p>You can learn various tutorials on JavaTpoint such as HTML, CSS, JavaScript, Java, Android.</p>  
+        </details>  
+
+            <H3>HTML SEMANTICS</H3>
+        <img src="https://d2jdgazzki9vjm.cloudfront.net/htmlpages/images/html-aside-tag.png" alt="NO IMG">
+
+        <!-- 
+<header>:Yeh tag page ya section ke top portion ko represent karta hai, jisme navigation links ya headings ho sakte hain.
+
+<nav>:Is tag ka use navigation links define karne ke liye hota hai, jo ek page ke different sections ya doosre pages par le jaate hain.
+    
+<main>:Is tag mein page ka main content aata hai. Isme wo content aata hai jo page ka primary focus hai.
+
+<article>:Independent content blocks jaise blog post, news article ya user comment ko define karta hai. Har article tag apne aap mein complete content hota hai.
+
+<section>:Ek page ka ek meaningful section define karta hai, jo kisi specific topic ya theme se related ho.
+
+<aside>:Secondary content ya side notes ke liye use hota hai jo main content se directly related nahi hota. Jaise advertisements, related links, etc.
+
+<footer>:Page ya section ka last part, jisme copyright info, contact details, ya social media links ho sakte hain.
+
+<figure> aur <figcaption>:figure kisi image ya visual content ko wrap karta hai, aur figcaption us content ka caption ya description provide karta hai.
+
+<mark>:Text ko highlight ya emphasize karne ke liye use hota hai, jisme user ka focus hona chahiye.
+
+<time>:Specific date ya time ko represent karne ke liye use hota hai, jo machine-readable hota hai. -->
+
+</body>
+</html>

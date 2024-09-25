@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in html</h1>
+    <p>by the help of forms data se sent to servers provided by the users</p>   <hr>
+
+    <form action="url" method="GET" autocomplete="off" enctype="multipart/form-data"><!--form me jitna data ya elements hote hai sare ek saath bundled hoke server(backend) k pass jate hai,,,,aur kahan pe vo backend hai y action me specify kiya jata hai-->
+<!-- form me jo data agr use server pr encrypted form me bhejna hai toh POST method ka use krte hai or agar clear txt format me bhejna hai toh GET method ka use krte hai(y url pe display hota hai jaise google search me) -->
+ <!-- autocomplete on ya off kr skte hai taki autofill suggestions aay ya naa aay  -->
+  <!-- encryption type agar multipart hai toh koi bhi  use form me browse krke images add kr skta hai lekin agar plain text hai toh images add nhi ho skti  -->
+
+    <label for="fname">First Name</label> <!--for attribute ko jb hm jis input ki id provide krte hai,us lable (first Name) pr click krne pr cursor automatially text box pe chala jata hai-->
+    <input type="text" placeholder="First Name" name="" id="fname"/> <!--place holder ka use krte jhai jb hme label textbox pe hi dena hota ho--> <br>
+
+    <label for="lname">Last Name</label> 
+    <input type="text" placeholder="Last Name" name="" id="lname"/><br>
+
+    <button type="submit">Pay</button>
+
+    </form>
+        
+    
+</body>
+</html>

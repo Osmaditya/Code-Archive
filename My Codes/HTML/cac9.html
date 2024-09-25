@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS ID & IFRAME</title>
+</head>
+<style>
+        .red{
+            background-color: yellow;
+        }
+        #green{
+            background-color: rgb(97, 186, 97);
+        }
+        #purple{
+            background-color: purple;
+        }
+        td,th{
+            border: 2px solid black;
+        }
+
+</style>
+<body>
+    <h1>Class Id & iframe</h1>
+    
+    <p class="red">Class attribute ko reference krne k liy .dot operator ka use krte hai 
+        aur ID attribute k liy # ka use krte hai</p>
+
+    <p id = "green">Class aur ID ka use basically elements ko select or target krne k liy kiya jaata hai</p>
+
+    <p class="red">iske applications me kaha ja skta hai ki inhe styling(css) me use us kr skte hai</p>
+
+    <h2 id = "purple">ID should be unique as convention </h2>
+
+    <h3 class="red">Same Classes can be used in many elements</h3>
+    <ol><h3>ID selector naming rules</h3>
+        <li>Must be unique</li>
+        <li>Cannot start with a number</li>
+        <li>Must not contain spaces</li>
+        <li>Allowed Characters (A-Z, a-z, 0-9), hyphen (-), underscore (_), aur colon (:)</li>
+        <li>Case Sensitive</li>
+    </ol>
+
+
+    <h1>iframes to embed youtube video</h1>
+    <table  style = "text-align: center; " >
+        <tr>
+            <th>Video Name</th>
+            <th>Video iframe</th>
+            
+        </tr>
+        <tr>
+            <td>Chai aur code</td>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=hrPaslrVAqqzItDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe></td>
+        </tr>
+        <tr>
+            <td>Apna College</td>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/XGa4onZP66Q?si=XArAqskuXi3DilGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        </tr>
+        <!-- koi youtube video uthao use share kro aur EMBEDED video link me y pura iframe vala tag rhega use copy kr lo -->
+    </table>
+
+</body>
+</html>

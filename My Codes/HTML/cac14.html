@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML MEDIA AND API</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Html media & api</h1>
+    <!-- jb hum video tag ka use krte hai iska mtlb y hai ki jo hm video input me de rhe vo already hmare same server pe hai jahan hmari html files hai  -->
+     <!-- lekin jb hm iframe ka use krte hai toh iska mtlb hai apki website ne ek window open kiya jiske through third part website aapka content show kr rhi -->
+    <div>
+        <h3>adding video:</h3>
+
+        <video src="./shortvideo.mp4" height="400" width="300"  muted autoplay></video><!--autoplay attribute -->
+
+        <hr>
+        <video height="200" width="100" muted  autoplay controls > <!--y controls browser deta hai ,,,,agar khudka control buttons chahiy toh javascript ka use kr skte hai-->
+            <source src="./shortvideo.mp4" />
+        </video>
+    </div>
+    <div>
+        <audio src="./Soulmate.mp3"  controls > </audio>
+    </div>
+    geo-location,drag and drop feature
+    browser ki features access krne k liy hme js use krna pdega html se nhi hoga
+     
+    
+</body>
+</html>

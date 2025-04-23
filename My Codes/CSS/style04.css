@@ -1,0 +1,24 @@
+/* color property is used to set the foreground color */
+/* background-color is used to set the background-color */
+/* RGB means red green blue qantity between o to 255 */
+/* HEX code means hexadecimal jaise rgb phelee to lettes red dusre do green and last do blue */
+body{
+    background-color: rgba(58, 55, 55, 0.738);
+}
+h1{
+    color:aqua;
+    background-color: black;
+    
+}
+h2{
+    color: #fff;
+    background-color: rgb(16, 74, 5);
+}
+p{
+    color: red;
+    background-color: #ffff00
+}
+button{
+    color: gold;
+    background-color: black;
+}

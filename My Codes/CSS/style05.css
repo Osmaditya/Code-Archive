@@ -1,0 +1,34 @@
+/* text-align^ means sara text left me aye ,centere me aye ya  right me aye */
+/* text-align: justify; CSS property text ko donon taraf se align karta hai — left aur right margin ke beech mein. Iska matlab hai ki har line ka text dono kinare se barabar dikhega, jaise ki newspaper ya magazine ke articles mein hota hai. */
+/* font weight means konsa text jada bold hona chahiye konsa ligth hona chahiye */
+/* text decoration means kisi bhi text ko underline de skte hai overline krr skte hai ya line through dena aur bhi kafi kuch */
+/* line height = do line ke text ke beechme kitna distnace hona chahiye wo */
+/* letter spacing means text ke beech me spacing krna */
+/* font size jitn bhi text likha hai hamne wo kitna bada ya kitna chota hona chaiye */
+/* font style like curve normal lateral etc */
+h1{
+    text-align: center;
+    /* width: 50%; */
+    text-decoration: dashed black underline;
+    font-family: Georgia;
+}
+h2{
+    font-weight: 800;
+    text-decoration: wavy pink overline;
+}
+
+p{
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    /* browser jo font style support kr pay vo select kr le pehle tnr ,then times...; */
+}
+h3{
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,59 @@
+h1 {
+    display: inline;
+    background-color: pink;
+}
+
+/* span{
+    display: block;
+    background-color: greenyellow;
+} */
+
+#inline {
+    border: 2px solid;
+    background-color: lime;
+    /* no effect of height and width on span element */
+    height: 255px;
+    width: 300px;
+
+    padding: 20px;
+    /* L R only*/
+
+    margin: 20px;
+    /* L R only*/
+
+}
+
+.blockinline {
+    background-color: violet;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    padding: 20px;
+    display: inline-block;
+    /* div styled like block but behave like inline*/
+}
+
+#outer {
+    height: 400px;
+    width: 400px;
+    border: 2px solid;
+    background-color: pink;
+    margin: 50px;
+
+    font-size: 15px;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    background-color: rgb(214, 21, 21);
+    margin: 10%;
+    /* relative to outer div set hoga */
+
+    font-size: 2em;
+    /* 2 times of outer text = 30px*/
+    padding: 1em;
+    /* 30px*/
+}

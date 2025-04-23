@@ -1,0 +1,106 @@
+/* * FOR THE RAINBOW DIV */  
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* JUSTIFY-CONTENT : It decides how space is distributed between flex items inside the flex container.  */
+
+    /* justify-content: flex-start;  by default*/
+    /* 📦📦📦 _ _ _ _ _ */
+    /* justify-content: flex-end; */
+    /* _ _ _ _ _ 📦📦📦 */
+    /* justify-content: center; */
+    /* _ _ 📦📦📦 _ _   Items are centered in the container.*/
+    
+    /* justify-content: space-between; */
+    /* 📦 _ _ _ 📦 _ _ _ 📦 Items have space between them, but no space on the edges. */
+
+    /* justify-content: space-around; */
+    /* _ 📦 _ _ 📦 _ _ 📦 _     (space on edges is half the space between boxes)*/
+
+    /* justify-content: space-evenly; */
+    /* _ _ 📦 _ _ 📦 _ _ 📦 _ _     (all gaps are equal)*/
+
+/* Value | Space on sides | Space between
+flex-start | ❌ none | ❌ none
+flex-end | ❌ none | ❌ none
+center | ✅ equal sides | ❌ none
+space-between | ❌ none | ✅ equal
+space-around | ✅ half | ✅ equal
+space-evenly | ✅ equal | ✅ equal */
+
+    /* FLEX-WRAP  */
+
+    /* flex-wrap: nowrap;  by default */
+    /* 📦📦📦📦📦📦📦 (ek hi line mein sab kuch, even if it overflows) */
+
+    /* flex-wrap: wrap; */
+    /* 📦📦📦📦 */
+    /* 📦📦📦   → Automatically doosri line mein chale jaate hain */
+
+    /* flex-wrap: wrap-reverse; */
+    /* 📦📦📦📦
+       ⬆
+       📦📦📦   cross-axis pr*/
+
+    /* ALIGN-ITEMS  */
+    /* flex items ko cross axis pe align krne k liy  */
+    /* align-items: flex-start;
+    align-items: flex-end;   
+    align-items: center; */
+    /* align-items: baseline;  Sab items ka text base ek line pe hoga. */
+
+    /* ALIGN-CONTENT  */
+    /* Jab flex items wrap ho jaate hain (multiple lines) (i.e., flex-wrap: wrap hota hai),
+
+tab align-content poori lines ko cross-axis mein align karta hai — not individual items, but the whole lines.
+
+🔸 Soch le ki agar items 2-3 rows mein hain, to ye un rows ke beech ka spacing set karta hai. */
+
+    /*flex-wrap: wrap;    /*(matlab flex-wrap: wrap hona zaroori hai, warna align-content ka koi effect nahi dikhega)*/
+    align-content: flex-end;     /* bottom se top ki traf jaa rha sab*/
+    align-content: center;
+    align-content: space-evenly;
+    /* align-content: baseline; */
+
+
+
+}
+
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;  /*container flex krne pe inki height width ignore hogi taki flex items shise fit ho ske*/
+    width: 300px;   
+    /* width: 50px; for flex-grow */
+    text-align: center;
+    font-size: 1em;
+}
+
+#org{  /* align-self:  > align-items */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+
+    /* flex-basis: 10px; sets initial size of flex item */
+
+    flex-grow: 1;   /*remaining space in container ko occupy krne k liy*/
+    min-width: 60px;
+    /* flex shorthand :  flex-grow|flex-shrink|flex-basis  */
+    flex: 2 2 100px;
+}
+
+#blue{
+    /* flex-basis: 500px; */
+
+    /* flex-grow: 2;   two times of org space */    /* when elements underflow width of div=50px*/
+    flex-shrink: 2; /* when elements overflow width of div=300px*/
+}

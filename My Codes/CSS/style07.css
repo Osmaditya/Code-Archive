@@ -1,0 +1,52 @@
+div{
+    height: 200px;  /* agr yha ham height or width ko equal krr de fir border radious 50% dede to wo ek circl banega*/
+    width: 500px;
+    background-color: cadetblue;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    border: 5px solid black;    /*border shorthand*/
+    border-top: 5px dashed blue;
+
+    /* border-radius: 25px; */
+    border-top-right-radius: 25px;
+
+    /* padding  */
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* margin  */
+    margin: 15px 20px;
+}
+h1{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+
+    /* margin: 0 ; jo heading ki defualt margin hai wo 0 ho jayegi */
+}
+
+button{
+    background-color: yellow;
+    border-radius: 15px;
+
+    /* padding :20px   for all 4 sides */
+
+    padding: 10px 20px; /*top&bottom |left&right*/
+    /* padding: 10px 15px 20px; /*top |left&right|bottom */
+    /* padding: 10px 15px 16px 20px; /*top|right|bottom|left */
+    margin: 20px;
+}
+
+#random{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50%;
+    padding: 80px;
+
+
+}

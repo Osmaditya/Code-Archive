@@ -1,0 +1,49 @@
+div {
+    height: 200px;
+    width: 200px;
+    /* ALPHA SETS OPACITY FOR A COLOR  */
+    /* background-color: rgb(255, 0, 0,0);completely hidden */
+    /* background-color: rgb(255, 0, 0,1);completely visible */
+    background-color: rgb(255, 0, 0, 0.25);
+    /*alpha=0.25 opacity*/
+}
+
+#opacity {
+    background-color: blue;
+    /* OPACITY SETS OPACITY FOR AN ELEMENT */
+    /* opacity: 0; sab gayab ho jayega div k andar ka */
+    /* opacity: 1; completly visible hoga */
+    opacity: 0.5;
+}
+
+/***************************************************************/
+#transition {
+    height: 200px;
+    width: 200px;
+    background-color: lime;
+
+    transition: 1s;
+    /*transtion-duration*/
+}
+
+#transition:hover {
+    background-color: black;
+    border-radius: 50%;
+}
+
+/***********************************************************/
+#marg {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    /* to bring in center*/
+    margin-top: 10px;
+    background-color: #ec25c1;
+    /* transition shorthand  :  propertyname|duration|timing-function|delay */
+    transition: margin-top 2s ease-in-out 0.2s;
+}
+
+#marg:hover {
+    background-color: black;
+    margin-top: 200px;
+}

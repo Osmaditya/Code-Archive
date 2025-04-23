@@ -1,0 +1,151 @@
+/* Selectors in Css  */
+
+/* 1. Universal Selector */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 2. Element Selector */
+h1,
+h3 {
+    /*multiple selectors */
+    color: #b92b27
+}
+
+/* 3. ID Selector */
+/* more specificity Selector Specificity: (1, 0, 2)><button :hover>Selector Specificity: (0, 1, 1 */
+#login {
+    /* yha hamne ise id ki madad se change kiya hai ishliye ye psedu class ki wajah se change nhi hoga*/
+    background-color: white;
+    color: rgb(14, 1, 1);
+
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* 4. Class Selector  */
+.upvote {
+    background-color: greenyellow;
+}
+
+#myid p {
+    color: green;
+}
+
+/* Or
+div[id="myid"] p {
+    color: green;
+} */
+
+/* 5. Decendent Selector  */
+p a {
+    /* paragraph k andar jitne anchor tag hai unhe select krega*/
+    color: purple;
+    background-color: rgb(253, 247, 123);
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+/* adjacent sibling combinator */
+p+h3 {
+    /*jo jo h3 p k just baad aa rhe unhe select krega*/
+    text-decoration: underline;
+}
+
+.upvote+button {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* Child combinator */
+div>input {
+    /* div k direct child input ko select kro*/
+    background-color: darkslategrey;
+    color: white;
+}
+
+/* Attribute Selector  */
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    /*attribut ki value ki basis pe*/
+    color: red;
+}
+
+input[type] {
+    /*input button hai jiske andr type attribute hai wo sab ish color me change ho jaye */
+    background-color: azure;
+    /*attribute k basis pe*/
+}
+
+/* PseudoClass : hover active checked :nth-of-type */
+/* to style special state of selected element  */
+button:hover {
+    /*element(nospace):(nospace)pseudoclass*/
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+
+p:active {
+    font-weight: bold;
+
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+    font-weight: bold;
+}
+
+/* div:nth-of-type(2){
+    background-color: burlywood;
+} */
+div:nth-of-type(2n) {
+    background-color: burlywood;
+}
+
+/* Pseudo elements ::first-letter ::first-line ::selection */
+/* to style specific past of selected element  */
+h1::first-letter {
+    color: black;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: chartreuse;
+}
+
+/* proirity (cascading)*/
+
+h3 {
+    background-color: #d59090;
+}
+
+h3 {
+    background-color: #6ce774;
+}
+
+/* baad me green kr rhe isliy vhi show hoga*/
+
+/* most priority due to !important */
+/* h3{
+    background-color: #d54090 !important;
+} */

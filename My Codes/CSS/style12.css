@@ -1,0 +1,173 @@
+ /* grid flex box ki tarah hi hai bss 2d arrangement me hai
+ grid me alignment whi rhta hai bss unke beech me
+ thoda thoda equal gap aa jata hai  */
+
+ .container {
+     height: 300px;
+     width: 600px;
+     background-color: rgb(7, 186, 186);
+     border: 2px solid rgb(16, 27, 226);
+
+     display: grid;
+     /* display: inline-grid; grid block hota hai but use inline behave krwane k liy */
+
+     /* grid-template-rows: 100px 100px 100px; */
+     /* grid-template-rows: 50px 50px 50px 50px 50px; */
+     /* grid-template-columns: 200px 200px 200px; */
+     /* grid-template-columns: auto auto auto auto; */
+
+     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+
+     /* row-gap: 10px;
+    column-gap: 20px; */
+     grid-gap: 10px 10px;
+
+     /* justify-items: center;
+    align-items: center; */
+     place-items: center;
+ }
+
+ .item {
+     height: 50px;
+     width: 100px;
+     /* agr ham ishe width or height na de to jo bhi grid coloum me width hogi wo puri occupy krr lega */
+     background-color: lime;
+     border: 2px solid black;
+     text-align: center;
+ }
+
+ .one {
+     /* grid-column-start: 1;
+    grid-column-end: 4; */
+     grid-column: 1/3;
+     /* grid-column: 1/span 3; */
+
+     /* justify-self: end;
+    align-self: start;*/
+     place-self: center;
+ }
+
+ .two {
+     /* grid-row-start: 1;
+    grid-row-end: 3; */
+     /* grid-row: 1/3; */
+ }
+
+ /* *********************CSS ANIMATIONS *****************/
+
+ .box {
+     height: 200px;
+     width: 200px;
+     background-color: pink;
+
+     /* Animation properties  */
+
+     /* animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3;   infinite
+    animation-direction: normal;    alternate  reverse */
+
+     /* ANimation-shorthand */
+     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: fontAnimation 2s ease-in 0s infinite normal;
+
+
+ }
+
+ @keyframes fontAnimation {
+     from {
+         font-size: 20px;
+     }
+
+     to {
+         font-size: 40px;
+         border-radius: 25px;
+     }
+ }
+
+ @keyframes changecolor {
+     0% {
+         background-color: pink;
+     }
+
+     50% {
+         background-color: lime;
+     }
+
+     80% {
+         background-color: violet;
+     }
+
+     100% {
+         background-color: black;
+     }
+ }
+
+ /***************************************** MEDIA QUERIES *************************/
+
+ h1 {
+     background-color: rgb(228, 231, 104);
+     border: 2px solid black;
+
+ }
+
+ /* exactly 400px ki width pr h1 me y changes aayenge  */
+ @media (width:400px) {
+     h1 {
+         background-color: red;
+         color: white;
+     }
+ }
+
+ /* @media(min-width:500px){
+    h1{
+        background-color: rgb(220, 111, 15);
+        color: rgb(12, 8, 8);
+    }
+} */
+ /* @media (max-width:400px) {
+   h1{
+      background-color: pink;
+   }
+   
+} */
+
+ @media(min-width:450px) and (max-width: 700px) {
+     h1 {
+         background-color: rgb(220, 15, 172);
+         color: rgb(12, 8, 8);
+     }
+ }
+
+ /* 0n the basis of orientation */
+ @media(orientation : landscape) {
+     h1 {
+         background-color: aqua;
+         color: brown;
+     }
+ }
+
+ /* *********************************Z-INDEX ********************* */
+
+ .square {
+     height: 150px;
+     width: 150px;
+     border: 2px solid black;
+     background-color: #a86f6f;
+ }
+
+ .first {
+     background-color: aquamarine;
+     position: relative;
+     z-index: 1;
+ }
+
+ .second {
+     background-color: brown;
+     position: relative;
+     bottom: 50px;
+     z-index: 2;
+ }

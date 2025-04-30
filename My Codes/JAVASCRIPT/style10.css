@@ -1,33 +1,37 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.bt{
+
+.bt {
     width: 100px;
     margin: 20px auto;
 }
-.color-box{
+
+.color-box {
     height: 100px;
     width: 800px;
     border: 2px solid black;
     margin: auto;
 }
 
-.dd{
+.dd {
 
     width: 100px;
     height: 100px;
     background-color: lime;
 }
-span{
+
+span {
     height: 100px;
-    display:inline-block;
-    width:100px;
-    border :2px solid black;
-    margin:5px;
+    display: inline-block;
+    width: 100px;
+    border: 2px solid black;
+    margin: 5px;
 }
-#ip2{
+
+#ip2 {
     width: 300px;
 }

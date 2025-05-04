@@ -80,7 +80,8 @@ colorChange();
 //APIS EXAMPLES:
 // https://catfact.ninja/fact
 // https://bored-api.appbrewery.com/random
-// https://bored-api.appbrewery.com/random
+// https://dog.ceo/api/breeds/image/random
+// "https://icanhazdadjoke.com/"    //random jokes
 
 //ACCESSING DATA FROM JSON
 //JSON.parse()  && JSON.stringify()
@@ -193,3 +194,5 @@ getData();
 
 console.log("After getDATA()");    //y getdata() k pehle hi print ho jaayega
 // yha ye fetch asynchronous kaam krenge to vo wait krega api fetch ka tbtk usse pehle hi "After Getdata" print ho jayega
+
+

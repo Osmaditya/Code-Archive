@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #18d725;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to RollDice Page</h1>
+
+
+    <h3>dice rolled no : <%= diceVal %>
+    </h3>
+
+    <!-- Conditional statements in EJS  -->
+    <% if(diceVal==6) { %>
+        <h3>Yay! You rolled a six! Roll again!</h3>
+        <% } %>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram2</title>
+    <style>
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include("includes/header.ejs") %>
+        <h1>This page belongs to : <%= data.name %>
+        </h1>
+        <button>Follow </button>
+        <button>Message</button>
+        <h2>Followers : <%= data.followers %> &nbsp; &nbsp; &nbsp; &nbsp; Following : <%= data.following %>
+        </h2>
+        <hr>
+
+        <% for(let post of data.posts){ %>
+            <img src="<%= post.image %>" alt="">
+            <h2>Likes : <%= post.likes %> &nbsp; &nbsp; &nbsp; &nbsp; Comments : <%= post.comments %>
+            </h2>
+            <% } %>
+
+                <!-- //using include  : they are not html escaped mtln string k form me nhi html k form er jayega  -->
+                <%- include("includes/footer.ejs") %> <!-- yaad rkkho /includes nhi krna is case me -->
+
+</body>
+
+</html>

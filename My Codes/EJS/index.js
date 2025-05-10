@@ -59,3 +59,6 @@ app.use(express.static("public"));
 
 // Serve static files from the 'public' directory
 // app.use(express.static(path.join(__dirname, "public")))
+
+// 🔹 Why express.static() is Needed?
+// By default, Express doesn't expose any files to the browser. You explicitly have to tell Express which folder's files can be publicly accessed.

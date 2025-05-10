@@ -52,3 +52,10 @@ app.get("/ig2/:username", (req, res) => {
     }
 
 })
+
+//using static files
+app.use(express.static("public"));
+// Now you can access them via: http://localhost:3000/bhimshankar.webp
+
+// Serve static files from the 'public' directory
+// app.use(express.static(path.join(__dirname, "public")))

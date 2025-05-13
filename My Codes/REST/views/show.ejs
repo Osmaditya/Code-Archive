@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual post</title>
+    <link rel="stylesheet" href="/style.css">
+    <!--(Leading / is important, or else it tries to fetch /posts/<id>/style.css, causing weird logs like you mentioned.)-->
+
+
+</head>
+
+<body>
+    <h1>Here is your post in detail :</h1>
+    <h3>Your Post id : <%= post.id %>
+    </h3>
+    <div class="postdiv"> <!-- same class as in index.ejs taki style apply ho ske -->
+        <h3 class="user" style="font-style: italic;">
+            @<%= post.username %>
+        </h3>
+        <h4 class="content">
+            <%= post.content %>
+        </h4>
+    </div>
+</body>
+
+</html>
